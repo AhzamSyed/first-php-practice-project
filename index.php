@@ -122,6 +122,7 @@ while ($i <=5){
     $i++; 
 }
 ?> -->
+    </div>
 <?php
 $i = 1;
 do{
@@ -130,6 +131,29 @@ do{
 }
 while($i<=5)
 ?>
-    </div>
+<?php
+$i = 1;
+do{
+    echo "Number is : " , $i, "<br>";
+    $i++; 
+}
+while($i<=5)
+?>
+<?php
+$i = 1;
+do{
+    echo "Number is : " , $i, "<br>";
+    $i++; 
+}
+while($i<=5)
+?>
+<?php
+$i = 1;
+do{
+    echo "Number is : " , $i, "<br>";
+    $i++; 
+}
+while($i<=5)
+?>
 </body>
 </html>
