@@ -122,38 +122,15 @@ while ($i <=5){
     $i++; 
 }
 ?> -->
+
+<?php
+// foreach loop
+$employee = ["Ali" => 23, "Ahmad" => 26, "Ahmer" => 28];
+foreach($employee as $name => $age){
+    echo $name . " : " . $age;
+    echo "<br>";
+}
+?>
     </div>
-<?php
-$i = 1;
-do{
-    echo "Number is : " , $i, "<br>";
-    $i++; 
-}
-while($i<=5)
-?>
-<?php
-$i = 1;
-do{
-    echo "Number is : " , $i, "<br>";
-    $i++; 
-}
-while($i<=5)
-?>
-<?php
-$i = 1;
-do{
-    echo "Number is : " , $i, "<br>";
-    $i++; 
-}
-while($i<=5)
-?>
-<?php
-$i = 1;
-do{
-    echo "Number is : " , $i, "<br>";
-    $i++; 
-}
-while($i<=5)
-?>
 </body>
 </html>
