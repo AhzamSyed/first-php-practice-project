@@ -123,13 +123,29 @@ while ($i <=5){
 }
 ?> -->
 
-<?php
+<!-- <?php
 // foreach loop
 $employee = ["Ali" => 23, "Ahmad" => 26, "Ahmer" => 28];
 foreach($employee as $name => $age){
     echo $name . " : " . $age;
     echo "<br>";
 }
+?> -->
+<?php
+// array
+//  - Indexed Array
+//  - Associate Array
+//  - Multidimensional Array
+
+
+// Indexed Array
+
+$arr = array (1,"a",3,3.14,6);
+//array_push($arr, 0);
+array_shift($arr);
+echo "<pre>";
+print_r($arr);
+
 ?>
     </div>
 </body>
