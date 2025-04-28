@@ -131,7 +131,7 @@ foreach($employee as $name => $age){
     echo "<br>";
 }
 ?> -->
-<?php
+<!-- <?php
 // array
 //  - Indexed Array
 //  - Associate Array
@@ -146,7 +146,26 @@ array_shift($arr);
 echo "<pre>";
 print_r($arr);
 
+?> -->
+
+<!-- <?php
+// associate array
+$marks = ['maths' => 60, 'english' => 75, 'science' => 65];
+echo count($marks);
+
+?> -->
+<?php 
+// multidimensional array
+$students = array(
+    "Ali" => array('maths' => 60, 'english' => 75, 'science' => 65),
+    "Abbas" => array('maths' => 80, 'english' => 70, 'science' => 75),
+    "Ahmad" => array('maths' => 70, 'english' => 85, 'science' => 70),
+);
+echo "<pre>";
+$students ["Hamza"] = array('maths' => 60, 'english' => 75, 'science' => 80);
+print_r($students);
 ?>
+
     </div>
 </body>
 </html>
