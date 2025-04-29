@@ -154,7 +154,7 @@ $marks = ['maths' => 60, 'english' => 75, 'science' => 65];
 echo count($marks);
 
 ?> -->
-<?php 
+<!-- <?php 
 // multidimensional array
 $students = array(
     "Ali" => array('maths' => 60, 'english' => 75, 'science' => 65),
@@ -164,7 +164,38 @@ $students = array(
 echo "<pre>";
 $students ["Hamza"] = array('maths' => 60, 'english' => 75, 'science' => 80);
 print_r($students);
-?>
+$employee = ["Ali","Ahmad","Hamza"];
+if(in_array("Ali", $employee)){
+    echo "Exist";
+}
+else{
+    echo "not exist";
+}
+?> -->
+<!-- <?php
+//strings
+$message = "Hello world! This is my first php practice project";
+
+if(strpos($message, "world1") !== false){
+    echo "Found";
+}
+else{
+    echo "not found";
+}
+$filename = "profile.php";
+$extension = substr($filename, strlen($filename) - 3);
+echo $extension;
+
+// joining and spliting
+$fruits = "apple, banana, orange";
+$fruitsArr = explode(", " ,$fruits);
+echo "<pre>";
+print_r($fruitsArr);
+
+$languages = ["PHP","JAVA","PYTHON"];
+$langList = implode(",", $languages);
+echo $langList;
+?> -->
 
     </div>
 </body>
