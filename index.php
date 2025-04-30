@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP</title>
+<style>
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
 </head>
 <body>
     <div class="container">
@@ -197,6 +204,19 @@ $langList = implode(",", $languages);
 echo $langList;
 ?> -->
 
+        <form action="formaction.php" method="get">
+            <label for="name">Name</label>
+            <input type="text" name="name" value="">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" value="">
+            <br>
+            <br>
+            <input type="submit" name="submitbtn" value="SUBMIT">
+            <br>
+            <br>
+        </form>
     </div>
 </body>
 </html>
