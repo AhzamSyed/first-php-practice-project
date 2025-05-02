@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP</title>
-<style>
+<!-- <style>
     .container{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-</style>
+</style> -->
 </head>
 <body>
     <div class="container">
@@ -204,7 +204,7 @@ $langList = implode(",", $languages);
 echo $langList;
 ?> -->
 
-        <form action="formaction.php" method="get">
+        <!-- <form action="formaction.php" method="get">
             <label for="name">Name</label>
             <input type="text" name="name" value="">
             <br>
@@ -216,7 +216,54 @@ echo $langList;
             <input type="submit" name="submitbtn" value="SUBMIT">
             <br>
             <br>
-        </form>
+        </form> -->
+<!-- 
+        <form action="formaction.php" method="post"">
+            <label for="name">Name</label>
+            <input type="text" name="name" value="">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" value="">
+            <br>
+            <br>
+            <input type="submit" name="submitbtn" value="SUBMIT">
+            <br>
+            <br>
+        </form> -->
+
+<!-- <?php
+// functions
+function add($num1,$num2){
+    $sum = $num1 + $num2;
+    echo $sum;
+}
+add(4 ,7);
+?> -->
+<?php
+// functions with return
+// function sub($num1,$num2){
+//     $sub = $num1 - $num2;
+//     return $sub;
+// }
+// $result = sub(4 ,7);
+// echo $result;
+
+function sum (...$numbers)
+{
+    $sum = 0;
+    if(!empty($numbers)){
+        foreach ($numbers as $num) {
+            $sum += $num;
+        }
+    }
+    return $sum;
+}
+$res = sum(5,9,8,3,5,6);
+echo "Sum = " . $res;
+?>
+
+
     </div>
 </body>
 </html>
