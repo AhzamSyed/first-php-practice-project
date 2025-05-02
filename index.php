@@ -240,15 +240,18 @@ function add($num1,$num2){
 }
 add(4 ,7);
 ?> -->
-<?php
-// functions with return
-// function sub($num1,$num2){
-//     $sub = $num1 - $num2;
-//     return $sub;
-// }
-// $result = sub(4 ,7);
-// echo $result;
 
+<!-- <?php
+// functions with return
+function sub($num1,$num2){
+    $sub = $num1 - $num2;
+    return $sub;
+}
+$result = sub(4 ,7);
+echo $result;
+
+
+// new method of arguments
 function sum (...$numbers)
 {
     $sum = 0;
@@ -261,7 +264,26 @@ function sum (...$numbers)
 }
 $res = sum(5,9,8,3,5,6);
 echo "Sum = " . $res;
-?>
+
+
+
+// old method of arguments
+function plus()
+{
+    $num_args = func_num_args();
+    echo $num_args;
+    die();
+    $sum = 0;
+    foreach(func_get_args() as $num){
+        $sum += $num ;
+    }
+    return $sum;
+}
+$sum = plus(1,8,9,2,3,2);
+echo $sum;
+?> -->
+
+
 
 
     </div>

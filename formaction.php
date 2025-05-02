@@ -24,3 +24,15 @@ if(!empty($_REQUEST)){
     echo $_REQUEST['email'];
 }
 ?> -->
+
+<?php
+// passing arguments by value and by preference
+function show_message(&$msg){
+    $msg .= ", Nice to see you";
+    echo $msg;
+}
+
+$message ="Hello Dear";
+show_message($message);
+echo "<br>", $message;
+?>
