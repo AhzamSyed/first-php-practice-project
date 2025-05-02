@@ -25,7 +25,7 @@ if(!empty($_REQUEST)){
 }
 ?> -->
 
-<?php
+<!-- <?php
 // passing arguments by value and by preference
 function show_message(&$msg){
     $msg .= ", Nice to see you";
@@ -35,4 +35,12 @@ function show_message(&$msg){
 $message ="Hello Dear";
 show_message($message);
 echo "<br>", $message;
-?>
+?> -->
+<!-- <?php
+// default arguments values
+function show_name($name,$prefix = "Mr."){
+    return $prefix . " " . $name;
+}
+$username = show_name("Ahzam");
+echo $username;
+?> -->
